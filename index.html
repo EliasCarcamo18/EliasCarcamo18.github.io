@@ -3,59 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV de Elias Carcamo</title>
-    
-
+    <meta name="description" content="Portafolio Profesional y CV de Elias Carcamo - Desarrollador Backend & Fullstack | Ingeniería en Informática">
+    <title>Portafolio y CV - Elias Carcamo</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
 </head>
 <body>
 
-    <header>
-        <img src="" width="400" alt="Logo">
-        <h2>Ingeniero en informática</h2>
-        <p>¡Bienvenido a mi portafolio!</p>
+    <!-- Encabezado Principal -->
+    <header class="header">
+        <div class="header-content">
+            <h1>Elias Carcamo</h1>
+            <h2>Estudiante de Ingeniería en Informática | Backend & Fullstack Developer</h2>
+            <p>Especializado en Arquitectura de Microservicios, Java, Spring y Entornos Cloud.</p>
+            <div class="header-actions">
+                <!-- Botón de descarga de CV -->
+                <a href="CV_Elias_Carcamo.pdf" download class="btn-download">Descargar CV (PDF)</a>
+            </div>
+        </div>
     </header>
 
-    <hr>
-    <nav>
-        <a href="#">Home</a> | 
-        <a href="#">About</a> | 
-        <a href="#">Contact</a> | 
-        <a href="https://www.youtube.com/watch?v=UxvJqNb6U7A">Youtube</a>|
-        <a href="https://github.com/EliasCarcamo18?tab=repositories">Proyectos GitHub</a>
+    <!-- Barra de Navegación -->
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="#perfil">Sobre Mí</a>
+            <a href="#portafolio">Proyectos</a>
+            <a href="#educacion">Educación</a>
+            <a href="#cv">Experiencia y Habilidades</a>
+            <a href="#contacto">Contacto</a>
+            <a href="https://github.com/EliasCarcamo18" target="_blank" rel="noopener">GitHub</a>
+        </div>
+
+        <!-- Selector de Tema -->
+        <div class="theme-selector">
+            <label for="selector-tema">Tema:</label>
+            <select id="selector-tema">
+                <option value="auto">Automático</option>
+                <option value="light">Claro</option>
+                <option value="dark">Oscuro</option>
+            </select>
+        </div>
     </nav>
 
-    <hr>
-    <section id="portafolio">
-        <h1>Portafolio</h1>
-        <h3>Proyecto: Página Web</h3>
-        <p><strong>Descripción:</strong> Esta es una descripción breve del proyecto. </p>
-    </section>
-    <hr>
+    <!-- Contenido Principal -->
+    <main class="container">
 
-    <section id="cv">
-        <h3>Información Personal</h3>
-        <ul>
-            <li><strong>Nombre:</strong> Elias Carcamo</li>
-            <li><strong>Edad:</strong> 20 años</li>
-            <li><strong>Correo Electronico:</strong> <a href="mailto:el.carcamo@duocuc.cl">el.carcamo@duocuc.cl</a></li>
-        </ul>
-        <h3>Experiencia Laboral y Académica</h3>
-        <ul>
-            <li><strong>2026 - Actualidad:</strong> Cursando tercer año de Informatica.</li>
-            <li><strong>3 años:</strong> Experiencia asistente de operaciones - sector QSR.</li>
-            <li><strong>Ayudante:</strong> Maestro de construccion.</li>
-        </ul>
-        <h3>Habilidades</h3>
-        <ul>
-            <li>Gestion Operativa</li>
-            <li>Atención al cliente</li>
-            <li>Control de calidad e Higiene</li>
-            <li> liderazgo y capacitacion</li>
-            <li>Trabajo en equipo</li>
-            <li>Comunicación efectiva</li>
-            <li>Resolución de problemas</li>
-        </ul>
-    </section>
+        <!-- Perfil Profesional (Optimizada para ATS) -->
+        <section id="perfil" class="card">
+            <h2>Perfil Profesional</h2>
+            <p>
+                Estudiante de tercer año de Ingeniería en Informática en Duoc UC con sólida formación en desarrollo Fullstack y backend de microservicios. Experiencia práctica liderando y coordinando equipos de desarrollo en proyectos integrales semestrales. Competente en la construcción de arquitecturas escalables utilizando Java (Spring Boot, Spring Cloud Eureka, API Gateway), bases de datos relacionales y NoSQL, contenedores con Docker y despliegues en AWS Academy. Nivel de inglés intermedio en desarrollo.
+            </p>
+        </section>
+
+        <!-- Sección Portafolio / Proyectos -->
+        <section id="portafolio" class="card">
+            <h2>Proyectos Destacados</h2>
+            <div class="projects-grid">
+                
+                <article class="project-card">
+                    <h3>Proyecto Fullstack Web</h3>
+                    <p class="project-repo"><strong>Repositorio:</strong> <a href="https://github.com/Benja-ignacio/Proyecto-Fullstack.git" target="_blank" rel="noopener">Benja-ignacio/Proyecto-Fullstack</a></p>
+                    <p>Aplicación web integral con arquitectura cliente-servidor. Implementa autenticación de usuarios, operaciones CRUD completas y conexión a bases de datos relacionales/NoSQL.</p>
+                    <div class="tags-container">
+                        <span class="tag">Java</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">NoSQL</span>
+                        <span class="tag">Git</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <h3>Innovatech - Arquitectura de Microservicios</h3>
+                    <p class="project-repo"><strong>Repositorio:</strong> <a href="https://github.com/EliasCarcamo18/Innovatech.git" target="_blank" rel="noopener">EliasCarcamo18/Innovatech</a></p>
+                    <p>Solución tecnológica orientada a microservicios. Integra descubrimiento de servicios con Netflix Eureka, enrutamiento mediante API Gateway, pruebas con Postman y empaquetado en contenedores Docker sobre AWS Academy.</p>
+                    <div class="tags-container">
+                        <span class="tag">Spring Cloud</span>
+                        <span class="tag">Eureka</span>
+                        <span class="tag">API Gateway</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">AWS Academy</span>
+                        <span class="tag">Postman</span>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Sección Educación -->
+        <section id="educacion" class="card">
+            <h2>Educación y Certificaciones</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Ingeniería en Informática</h3>
+                    <p class="timeline-sub">Duoc UC | 2024 - Presente (Cursando 3er Año - 2026)</p>
+                    <p>Formación enfocada en ingeniería de software, bases de datos, redes, desarrollo web y gestión de proyectos informáticos.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Capacitación Cloud & Microservicios</h3>
+                    <p class="timeline-sub">AWS Academy / Formación Académica</p>
+                    <p>Uso de infraestructura en la nube, despliegue de contenedores Docker y diseño de arquitecturas distribuidas.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Inglés Intermedio</h3>
+                    <p class="timeline-sub">En curso (B1-B2 Técnico)</p>
+                    <p>Comprensión lectora de documentación técnica, redacción de código y comunicación operacional.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección CV: Experiencia y Habilidades -->
+        <section id="cv" class="card">
+            <h2>Experiencia Destacada</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Líder de Proyectos Académicos TI</h3>
+                    <p class="timeline-sub">Duoc UC | Proyectos Semestrales</p>
+                    <p>Coordinación de equipos de trabajo, asignación de tareas, control de versiones con Git/GitHub y aseguramiento de entregables técnicos bajo metodologías ágiles.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Asistente de Operaciones</h3>
+                    <p class="timeline-sub">Sector QSR | 3 Años</p>
+                    <p>Gestión operativa, control de calidad e higiene, liderazgo de personal, capacitación y resolución de incidencias en entornos de alta demanda.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Ayudante Técnico</h3>
+                    <p class="timeline-sub">Construcción</p>
+                    <p>Trabajo en equipo, ejecución técnica, resolución práctica de problemas y adaptabilidad.</p>
+                </div>
+            </div>
+
+            <h2>Habilidades Técnicas (Stack)</h2>
+            <div class="skills-container">
+                <span class="skill-badge tech">Java / Spring Boot</span>
+                <span class="skill-badge tech">Spring Cloud (Eureka / Gateway)</span>
+                <span class="skill-badge tech">Python</span>
+                <span class="skill-badge tech">JavaScript</span>
+                <span class="skill-badge tech">Kotlin (En aprendizaje)</span>
+                <span class="skill-badge tech">HTML5 / CSS3</span>
+                <span class="skill-badge tech">MySQL / NoSQL</span>
+                <span class="skill-badge tech">Docker</span>
+                <span class="skill-badge tech">AWS Academy</span>
+                <span class="skill-badge tech">Git / GitHub</span>
+                <span class="skill-badge tech">Postman</span>
+                <span class="skill-badge tech">Visual Studio / VS Code</span>
+            </div>
+
+            <h2 style="margin-top: 20px;">Habilidades Blandas y Liderazgo</h2>
+            <div class="skills-container">
+                <span class="skill-badge soft">Liderazgo de Equipos</span>
+                <span class="skill-badge soft">Coordinación de Proyectos</span>
+                <span class="skill-badge soft">Gestión Operativa</span>
+                <span class="skill-badge soft">Resolución de Problemas</span>
+                <span class="skill-badge soft">Trabajo Bajo Presión</span>
+                <span class="skill-badge soft">Comunicación Efectiva</span>
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto" class="card">
+            <h2>Contacto</h2>
+            <form id="form-contacto" class="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez">
+                </div>
+
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="el.carcamo@duocuc.cl">
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar Mensaje</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Elias Carcamo - Desarrollador de Software | Duoc UC</p>
+    </footer>
 
 </body>
 </html>
