@@ -1,5 +1,5 @@
 /* ==========================================
-   VARIABLES DE COLOR (Modo Claro ATS Compatible)
+   VARIABLES DE COLOR
    ========================================== */
 :root {
     --bg-color: #f4f6f9;
@@ -13,9 +13,6 @@
     --shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-/* ==========================================
-   VARIABLES PARA MODO OSCURO
-   ========================================== */
 body.dark-mode {
     --bg-color: #0f172a;
     --card-bg: #1e293b;
@@ -155,6 +152,25 @@ body {
     font-size: 1.4rem;
 }
 
+/* Listas e Información */
+.info-list {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.info-list li {
+    margin-bottom: 8px;
+}
+
+.info-list a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.info-list a:hover {
+    text-decoration: underline;
+}
+
 /* Proyectos */
 .projects-grid {
     display: flex;
@@ -199,7 +215,7 @@ body {
     font-weight: 500;
 }
 
-/* Línea de Tiempo (Educación y Experiencia) */
+/* Línea de Tiempo */
 .timeline {
     border-left: 3px solid var(--accent-color);
     padding-left: 18px;
@@ -222,7 +238,7 @@ body {
     margin-bottom: 4px;
 }
 
-/* Badges de Habilidades */
+/* Badges */
 .skills-container {
     display: flex;
     flex-wrap: wrap;
@@ -283,8 +299,15 @@ body {
     border-radius: 6px;
     font-weight: bold;
     cursor: pointer;
+    transition: background-color 0.2s, opacity 0.2s;
 }
 
+.btn-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Pie de Página */
 .footer {
     text-align: center;
     padding: 20px;
@@ -292,6 +315,7 @@ body {
     font-size: 0.85rem;
 }
 
+/* Adaptabilidad móvil */
 @media (max-width: 600px) {
     .header h1 {
         font-size: 1.8rem;
